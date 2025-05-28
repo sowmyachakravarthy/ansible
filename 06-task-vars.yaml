@@ -2,11 +2,12 @@
   hosts: local
   connection: local
   vars: 
-    COURSE: Ansible #equal to $VAR or &{VAR} in shell
+    COURSE: Devops with AWS #equal to $VAR or &{VAR} in shell
     DURATION: 10HR
     TRAINER: Sowmya
   tasks:
   - name: print course information
+    vars: Ansible
     ansible.builtin.debug:
     #vars reference should be surrounded by "" and called with flower braces {{}}
       msg: "Hello {{ COURSE }}, course Duration: {{ DURATION }}, Trainer is {{ TRAINER }}"
