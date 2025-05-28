@@ -7,7 +7,8 @@
     TRAINER: Sowmya
   tasks:
   - name: print course information
-    vars: Ansible
+    vars: 
+      COURSE: Ansible
     ansible.builtin.debug:
     #vars reference should be surrounded by "" and called with flower braces {{}}
       msg: "Hello {{ COURSE }}, course Duration: {{ DURATION }}, Trainer is {{ TRAINER }}"
