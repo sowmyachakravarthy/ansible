@@ -11,7 +11,7 @@
       msg: "Given number {{NUMBER}} is less than 100"
     when: NUMBER < 100
 
-  - name: print if the number is greater than 100
-    ansible.builtin.debug:
-      msg: "Given number {{NUMBER}} is greater 100"
-    when: NUMBER > 100
+  # - name: print if the number is greater than 100
+  #   ansible.builtin.debug:
+  #     msg: "Given number {{NUMBER}} is greater 100"
+  #   when: NUMBER > 100
